@@ -1,7 +1,182 @@
 @import url(./Fonts.css);
 
 
-body{
+body {
    margin: 0px;
    padding: 0px;
 }
+
+
+/*! HEADER */
+.nav_1 {
+   background-image: url(../image/Svg/Bg1-1.svg);
+   width: 100%;
+   height: 57px;
+   background-color: #013056;
+}
+
+.col {
+   line-height: 50px;
+}
+
+.header_top a {
+   font-size: 15px;
+   color: #caddea;
+   font-weight: 250;
+   font-family: "Roboto";
+   text-decoration: none;
+
+}
+
+.header_top span {
+   font-size: 15px;
+   color: #a0a4a6;
+   font-weight: 250;
+   font-family: "Roboto";
+   text-decoration: none;
+   margin-left: 35px;
+
+}
+
+.header_top img {
+   width: 35px;
+   height: 25px;
+}
+
+.H_top_right {
+   text-align: end;
+}
+
+.header_top {
+   display: flex;
+   justify-content: left;
+}
+
+.Life_Login {
+   display: flex;
+   justify-content: right;
+}
+
+.Life_Login a {
+   font-weight: 400;
+   color: white;
+   text-transform: uppercase;
+   margin-right: 40px;
+   text-decoration: none;
+}
+
+.Life_Login img {
+   width: 40px;
+   position: relative;
+   bottom: 2px;
+}
+
+
+.nav_2 {
+   width: 100%;
+   height: 40px;
+   filter: drop-shadow(2px 3.464px 3.5px #95aeb6);
+   background-color: #1b7fd0;
+}
+
+.nav_2 a {
+   display: block;
+   width: 100%;
+   height: 100%;
+   color: white;
+   text-decoration: none;
+   line-height: 37px;
+   text-transform: uppercase;
+   font-family: "Roboto";
+   font-weight: 500;
+
+
+   transition: all .2s linear;
+}
+
+.nav_2 a:hover {
+   background-color: #caddea;
+   color: #1b7fd0;
+}
+
+/*! HEADER */
+
+
+
+/*! MAIN */
+/* BANER */
+main {
+   width: 100%;
+   height: 100%;
+}
+
+.baner {
+   background-image: url(../image/baner/fon.png);
+   background-size: 100% 630px;
+   width: 100%;
+   height: 630px;
+}
+
+.baner .poster {
+   width: 100%;
+   height: 630px;
+   object-fit: cover;
+   position: absolute;
+}
+
+.baner .row {
+   position: relative;
+   width: 600px;
+   margin-left: 15px;
+}
+
+.b_img1 {
+   width: 100%;
+   height: 110px;
+}
+
+.baner h2 {
+   width: 532px;
+   height: 22px;
+   font-size: 22px;
+   text-transform: uppercase;
+   color: #000000;
+   font-weight: 500;
+   font-family: "Roboto";
+   margin-left: 30px;
+}
+
+.baner li {
+   width: 450px;
+   font-size: 18px;
+   color: #1b7fd0;
+   font-family: "Archivo Narrow";
+   font-weight: 400;
+}
+
+.baner span {
+   color: #000000;
+}
+
+.baner_botton a {
+   display: inline-block;
+   width: 200px;
+   height: 40px;
+   border: 2px solid #1b7fd0;
+   line-height: 35px;
+   text-decoration: none;
+   color: #1b7fd0;
+   font-weight: 400;
+   font-family: "Roboto";
+   font-weight: 600;
+
+   transition: all .3s ease;
+}
+
+.baner_botton a:hover {
+   background-color: #caddea;
+   color: #1b7fd0;
+}
+
+/* BANER */
+/*! MAIN */
