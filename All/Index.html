@@ -5,8 +5,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=\, initial-scale=1.0">
    <title>Document</title>
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link
@@ -17,6 +16,8 @@
    <link
       href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Archivo+Narrow:wght@400;500;600;700&family=Black+Ops+One&family=Inconsolata:wght@300&family=Kanit:ital@1&family=Kaushan+Script&family=Lora&family=Montserrat+Alternates:wght@600&family=Montserrat:ital,wght@0,600;0,700;1,400&family=Roboto:wght@300;400;500;700&family=Rubik+Moonrocks&family=Zen+Dots&display=swap"
       rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
    <link rel="stylesheet" href="./Style.css">
 </head>
 
@@ -30,11 +31,11 @@
                   <span>Support toll free:</span> <a href="#">1 (888) 901-8317</a>
                </div>
                <div class="col Life_Login">
-                  <a href="#">Login
-                     <img src="../image/header/Login icon.png" alt="">
+                  <a class="log" href="#">Login
+                     <!-- <img src="../image/header/Login icon.png" alt=""> -->
                   </a>
-                  <a href="#">Live Chat
-                     <img src="../image/header/Chat Icon.png" alt="">
+                  <a class="chat" href="#">Live Chat
+                     <!-- <img src="../image/header/Chat Icon.png" alt=""> -->
                   </a>
                </div>
             </div>
@@ -44,14 +45,14 @@
       <nav class="nav_2">
          <div class="container text-center">
             <div class="row">
-               <div class="col"><a href="#">home</a></div>
-               <div class="col"><a href="#">about us</a></div>
-               <div class="col"><a href="#">prices</a></div>
-               <div class="col"><a href="#">discounts</a></div>
-               <div class="col"><a href="#">guarantees</a></div>
-               <div class="col"><a href="#">faq</a></div>
-               <div class="col"><a href="#">beware</a></div>
-               <div class="col"><a href="#">contact us</a></div>
+               <div class="col"><a class="border_li" href="#">home</a></div>
+               <div class="col"><a class="border_li" href="#">about us</a></div>
+               <div class="col"><a class="border_li" href="#">prices</a></div>
+               <div class="col"><a class="border_li" href="#">discounts</a></div>
+               <div class="col"><a class="border_li" href="#">guarantees</a></div>
+               <div class="col"><a class="border_li" href="#">faq</a></div>
+               <div class="col"><a class="border_li" href="#">beware</a></div>
+               <div class="col"><a class="border_li" href="#">contact us</a></div>
                <div class="col"><a href="#">blog</a></div>
             </div>
          </div>
@@ -66,8 +67,8 @@
                <div class="col ">
                   <img class="b_img1" src="../image/baner/Logo.svg" alt="">
                </div>
-               <div class="col">
-                  <h1>Things go Better with Us!</h1>
+               <div class="col baner_logo">
+                  <h1>Get a price quote</h1>
                </div>
                <div class="col">
                   <h2>What we offer you: </h2>
@@ -92,6 +93,74 @@
                <div class="col"><a href="#">Dissertations & Thesess</a></div>
                <div class="col"><a href="#">Resumes & CVs</a></div>
                <div class="col"><a href="#">Editing & Proofreading</a></div>
+            </div>
+         </div>
+      </section>
+
+      <section class="forma">
+         <div class="forma_top">
+            <div class="forma_logo">
+               <h2>Get a price quote</h2>
+               <div class="forma_flex">
+                  <img src="../image/Svg/Arrow.svg" alt="">
+                  <h1>15</h1>
+                  <h3>%OFF</h3>
+                  <p>YOUR FIRST ORDER</p>
+               </div>
+            </div>
+
+            <div class="bottom_forma">
+               <div class="form-floating">
+                  <h4>TITLE OF YOUR PAPER</h4>
+                  <select class="box_forma" id="floatingSelect" aria-label="Floating label select example">
+                     <option selected></option>
+                     <option value="1">One</option>
+                     <option value="2">Two</option>
+                     <option value="3">Three</option>
+                  </select>
+                  <!-- <label for="floatingSelect"></label> -->
+               </div>
+               <div class="form-floating">
+                  <h4>ACAVDEMIC LEVEL</h4>
+                  <select class="box_forma" id="floatingSelect" aria-label="Floating label select example">
+                     <option selected></option>
+                     <option value="1">One</option>
+                     <option value="2">Two</option>
+                     <option value="3">Three</option>
+                  </select>
+                  <!-- <label for="floatingSelect"></label> -->
+               </div>
+               <div class="form-floating">
+                  <h4>SPACING</h4>
+                  <select class="box_forma" id="floatingSelect" aria-label="Floating label select example">
+                     <option selected></option>
+                     <option value="1">One</option>
+                     <option value="2">Two</option>
+                     <option value="3">Three</option>
+                  </select>
+                  <!-- <label for="floatingSelect"></label> -->
+               </div>
+               <div class="form-floating">
+                  <h4>URGENCY</h4>
+                  <select class="box_forma" id="floatingSelect" aria-label="Floating label select example">
+                     <option selected></option>
+                     <option value="1">One</option>
+                     <option value="2">Two</option>
+                     <option value="3">Three</option>
+                  </select>
+                  <!-- <label for="floatingSelect"></label> -->
+               </div>
+               <div class="forma_cena">
+                  <h4>Total price</h4>
+                  <h2>16.99</h2>
+                  <h3>USD</h3>
+               </div>
+               <div class="order_forma">
+                  <a href="#">
+                     <h5>order now</h5>
+                     <!-- <div class="order_figyra"></div> -->
+                  </a>
+               </div>
             </div>
          </div>
       </section>

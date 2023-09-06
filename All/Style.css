@@ -65,10 +65,41 @@ body {
    text-decoration: none;
 }
 
-.Life_Login img {
-   width: 40px;
+.chat::after {
+   content: '';
+   background-image: url(../image/Svg/Chat.svg);
+   display: inline-block;
+   background-repeat: no-repeat;
+   width: 55px;
+   height: 20px;
    position: relative;
-   bottom: 2px;
+   top: 5px;
+   /* right: 35px; */
+}
+
+.log::after {
+   content: '';
+   background-image: url(../image/Svg/Login.svg);
+   display: inline-block;
+   background-repeat: no-repeat;
+   width: 55px;
+   height: 20px;
+   position: relative;
+   top: 5px;
+   /* right: 35px; */
+}
+
+.log:hover::after {
+   background-image: url(../image/Svg/Login2.svg);
+}
+
+.chat:hover::after {
+   background-image: url(../image/Svg/Chat2.svg);
+}
+
+.chat:hover,
+.log:hover {
+   color: #1b7fd0;
 }
 
 
@@ -77,6 +108,7 @@ body {
    height: 40px;
    filter: drop-shadow(2px 3.464px 3.5px #95aeb6);
    background-color: #1b7fd0;
+
 }
 
 .nav_2 a {
@@ -89,7 +121,11 @@ body {
    text-transform: uppercase;
    font-family: "Roboto";
    font-weight: 500;
-
+   border-left: 2px solid white;
+   border-right: 2px solid white;
+   position: relative;
+   left: 10px;
+   /* border-radius:8px ; */
 
    transition: all .2s linear;
 }
@@ -97,6 +133,8 @@ body {
 .nav_2 a:hover {
    background-color: #caddea;
    color: #1b7fd0;
+   border-left: 0px solid white;
+   border-right: 0px solid white;
 }
 
 /*! HEADER */
@@ -105,6 +143,37 @@ body {
 
 /*! MAIN */
 /* BANER */
+.baner_logo {
+   width: 1260px;
+   height: 50px;
+   background-color: #caddea;
+   margin: 20px 0 40px 0;
+   display: flex;
+   justify-content: space-between;
+   filter: drop-shadow(2px 3.464px 3.5px rgba(155, 182, 190, 0.75));
+}
+
+.baner_logo::before {
+   content: '';
+   width: 0;
+   height: 0;
+   border-top: 20px solid #caddea;
+   border-right: 30px solid transparent;
+   position: absolute;
+   bottom: -20px;
+   left: 0px;
+}
+.baner_logo h1 {
+   width: 300px;
+   font-size: 28px;
+   text-transform: uppercase;
+   color: #1b7fd0;
+   font-weight: 700;
+   font-family: "Roboto";
+   line-height: 50px;
+   margin-left: 10px;
+   /* text-align: left; */
+}
 main {
    width: 100%;
    height: 100%;
@@ -115,6 +184,7 @@ main {
    background-size: 100% 630px;
    width: 100%;
    height: 630px;
+
 }
 
 .baner .poster {
@@ -122,6 +192,7 @@ main {
    height: 630px;
    object-fit: cover;
    position: absolute;
+
 }
 
 .baner .row {
@@ -147,7 +218,7 @@ main {
    margin-left: 30px;
 }
 
-.baner h1 {
+.baner_filter {
    width: 570px;
    height: 60px;
    color: #1b7fd0;
@@ -159,6 +230,19 @@ main {
    text-transform: uppercase;
    font-weight: 700;
    font-family: "Roboto";
+   filter: drop-shadow(2px 3.464px 3.5px rgba(155, 182, 190, 0.75));
+}
+
+.baner_filter::before {
+   content: '';
+   width: 0;
+   height: 0;
+   border-top: 50px solid #caddea;
+   border-right: 50px solid transparent;
+   position: absolute;
+   top: 50px;
+   filter: drop-shadow(2px 3.464px 3.5px rgba(155, 182, 190, 0.75));
+
 }
 
 .baner li {
@@ -195,4 +279,172 @@ main {
 }
 
 /* BANER */
+
+/* FORMA */
+.forma {
+   background-image: url(../image/Svg/Bg2.svg);
+   width: 100%;
+   height: 300px;
+   background-color: #1b7fd0;
+}
+
+.forma_top {
+   width: 1300px;
+   height: 300px;
+   margin: 0 auto;
+}
+
+.forma_flex {
+   display: flex;
+   justify-content: flex-end;
+   width: 500px;
+   height: 50px;
+   
+}
+
+.forma_logo {
+   width: 1260px;
+   height: 50px;
+   background-color: #caddea;
+   display: flex;
+   justify-content: space-between;
+   filter: drop-shadow(2px 3.464px 3.5px rgba(2, 68, 121, 0.75));
+   position: relative;
+   top: 20px;
+   left: 20px;
+}
+
+.forma_logo img {
+   width: 25px;
+   margin: 0 20px;
+}
+
+.forma_logo h1 {
+   font-size: 50px;
+   font-weight: 700;
+   color: #d00;
+   line-height: 45px;
+}
+
+.forma_logo h2 {
+   width: 300px;
+   font-size: 28px;
+   text-transform: uppercase;
+   color: #1b7fd0;
+   font-weight: 700;
+   font-family: "Roboto";
+   line-height: 50px;
+   margin-left: 10px;
+   /* text-align: left; */
+}
+
+.forma_logo h3 {
+   font-size: 35px;
+   font-weight: 400;
+   color: #d00;
+   line-height: 50px;
+
+}
+
+.forma_logo p {
+   font-size: 22px;
+   line-height: 60px;
+   text-transform: uppercase;
+   color: #075da2;
+   font-weight: 400;
+   font-family: "Roboto";
+   margin-right: 10px;
+}
+
+.forma_logo::before {
+   content: '';
+   width: 0;
+   height: 0;
+   border-top: 20px solid #caddea;
+   border-right: 30px solid transparent;
+   position: absolute;
+   bottom: -20px;
+}
+
+.box_forma {
+   width: 300px;
+   height: 35px;
+   padding: 5px;
+   font-family: "Roboto";
+   font-size: 19px;
+}
+
+.bottom_forma {
+   width: 1250px;
+   height: 200px;
+   margin: 50px 0 0 50px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   column-gap: 140px;
+}
+
+.bottom_forma h4 {
+   font-size: 16px;
+   line-height: 25px;
+   color: #ffffff;
+   font-weight: 400;
+   font-family: "Roboto";
+   text-align: left;
+}
+
+.forma_cena {
+   width: 300px;
+   height: 55px;
+   margin-top: 25px;
+   display: flex;
+   flex-direction: row;
+   align-items: flex-end;
+   justify-content: space-evenly;
+   color: white;
+   font-family: "Roboto";
+}
+
+.forma_cena h3 {
+   font-weight: 400;
+}
+
+.order_forma {
+   width: 305px;
+   height: 40px;
+   margin-top: 30px;
+   background-color: #d00;
+}
+
+.order_forma h5,
+.order_forma a {
+   font-size: 26px;
+   text-transform: uppercase;
+   color: #ffffff;
+   font-weight: 400;
+   font-family: "Roboto";
+   text-align: center;
+   line-height: 40px;
+   text-decoration: none;
+}
+
+.order_forma::after {
+   content: '';
+   width: 0;
+   height: 0;
+   border-top: 15px solid #d00;
+   border-right: 20px solid transparent;
+   position: relative;
+   top: -5px;
+
+}
+
+.order_forma:hover::after {
+   border-top: 20px solid brown;
+}
+
+.order_forma:hover {
+   background-color: brown;
+}
+/* FORMA */
+
 /*! MAIN */
