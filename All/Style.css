@@ -1,11 +1,15 @@
-@import url(./Fonts.css);
-
+/* font-family: "Archivo Narrow"; */
+/* font-family: "Roboto"; */
 
 body {
    margin: 0px;
    padding: 0px;
 }
 
+main {
+   width: 100%;
+   height: 100%;
+}
 
 /*! HEADER */
 .nav_1 {
@@ -163,21 +167,19 @@ body {
    bottom: -20px;
    left: 0px;
 }
+
 .baner_logo h1 {
-   width: 300px;
+   width: 400px;
    font-size: 28px;
    text-transform: uppercase;
    color: #1b7fd0;
    font-weight: 700;
    font-family: "Roboto";
    line-height: 50px;
-   margin-left: 10px;
-   /* text-align: left; */
+   margin-left: 30px;
 }
-main {
-   width: 100%;
-   height: 100%;
-}
+
+
 
 .baner {
    background-image: url(../image/baner/fon.png);
@@ -299,7 +301,7 @@ main {
    justify-content: flex-end;
    width: 500px;
    height: 50px;
-   
+
 }
 
 .forma_logo {
@@ -334,7 +336,7 @@ main {
    font-weight: 700;
    font-family: "Roboto";
    line-height: 50px;
-   margin-left: 10px;
+   margin-left: 30px;
    /* text-align: left; */
 }
 
@@ -413,6 +415,8 @@ main {
    height: 40px;
    margin-top: 30px;
    background-color: #d00;
+
+   transition: all .3s ease-in-out;
 }
 
 .order_forma h5,
@@ -435,16 +439,332 @@ main {
    border-right: 20px solid transparent;
    position: relative;
    top: -5px;
+   transition: all .3s ease-in-out;
 
 }
 
 .order_forma:hover::after {
-   border-top: 20px solid brown;
+   border-top: 15px solid brown;
 }
 
 .order_forma:hover {
    background-color: brown;
 }
+
 /* FORMA */
 
+/* ESSAY */
+.essay {
+   width: 100%;
+   height: 1000px;
+   background-color: #f4f6fa;
+}
+
+.essay_all {
+   background-image: url(../image/Svg/Bg3.svg);
+   width: 100%;
+   height: 300px;
+   background-color: #f4f6fa;
+}
+
+.essay_top {
+   width: 1300px;
+   height: 1000px;
+   margin: 0 auto;
+}
+
+.essay_logo {
+   width: 1260px;
+   height: 50px;
+   background-color: #caddea;
+   position: relative;
+   top: 20px;
+   left: 20px;
+   filter: drop-shadow(2px 3.464px 3.5px rgba(155, 182, 190, 0.75));
+}
+
+.essay_logo h2 {
+   font-size: 28px;
+   text-transform: uppercase;
+   color: #1b7fd0;
+   font-weight: 700;
+   font-family: "Roboto";
+   line-height: 50px;
+   margin-left: 30px;
+   text-align: center;
+}
+
+.essay_logo::before {
+   content: '';
+   width: 0;
+   height: 0;
+   border-top: 20px solid #caddea;
+   border-right: 30px solid transparent;
+   position: absolute;
+   bottom: -20px;
+}
+
+.essay_top h4 {
+   margin: 0 auto;
+   text-align: justify;
+   width: 1240px;
+   height: 251px;
+   position: relative;
+   top: 50px;
+   font-size: 18px;
+   color: #000000;
+   font-family: "Arial Narrow";
+   font-weight: 600;
+   line-height: 40px;
+}
+
+
+
+
+.essay .card {
+   width: 278px;
+   height: 640px;
+   border: 1px solid #f4f6fa;
+   border-radius: 0;
+   padding: 10px;
+   background-color: #f4f6fa;
+   transition: all .3s ease-in;
+}
+
+
+
+.essay .card::after {
+   content: '';
+   width: 0;
+   height: 0;
+   border-top: 40px solid #f4f6fa;
+   border-right: 40px solid transparent;
+   position: absolute;
+   bottom: -40px;
+   left: 0px;
+   display: inline;
+   transition: all .3s ease-in;
+}
+
+.essay .card:hover::after {
+   border-top: 40px solid #ffffff;
+}
+
+.essay .card:hover {
+   background-color: #ffffff;
+}
+
+.img_befor::after {
+   content: '';
+   background-image: url(../image/Svg/Element1.svg);
+   display: inline-block;
+   background-repeat: no-repeat;
+   width: 100px;
+   height: 100px;
+   position: relative;
+   bottom: 630px;
+   transition: all .3s ease-in;
+}
+
+.img_befor:hover::after {
+   background-image: url(../image/Svg/Element1_dark.svg);
+}
+
+.essay h5 {
+   position: absolute;
+   top: 130px;
+   font-size: 18px;
+   line-height: 22px;
+   text-transform: uppercase;
+   color: #1b7fd0;
+   font-weight: 500;
+   font-family: "Roboto";
+   text-align: center;
+}
+
+.essay p {
+   position: absolute;
+   top: 200px;
+   line-height: 25px;
+   font-size: 16px;
+   color: #000000;
+   font-family: "Arial Narrow";
+   font-weight: 600;
+   text-align: left;
+}
+
+.ul1 {
+   position: absolute;
+   top: 290px;
+   line-height: 25px;
+   font-size: 16px;
+   color: #000000;
+   font-family: "Arial Narrow";
+   font-weight: 600;
+   text-align: left;
+   padding: 10px;
+}
+
+.ul2 {
+   position: absolute;
+   top: 340px;
+   line-height: 25px;
+   font-size: 16px;
+   color: #000000;
+   font-family: "Arial Narrow";
+   font-weight: 600;
+   text-align: left;
+   padding: 10px;
+}
+
+.essay .btn {
+   width: 200px;
+   position: absolute;
+   top: 590px;
+   right: 40px;
+}
+
+.essay .btn {
+   background-color: #075da2;
+   font-family: Roboto;
+   font-size: 16px;
+   border: none;
+   border-radius: 0px;
+}
+
+.essay .card:hover .btn {
+   background-color: #013056;
+}
+
+/* ESSAY */
+
+/* PAPER */
+.paper {
+   width: 100%;
+   height: 560px;
+   background-color: #1b7fd0;
+   background-image: url(../image/Svg/Bg2.svg);
+   background-size: 100% 560px;
+   background-repeat: no-repeat;
+}
+
+.paper_top {
+   width: 1300px;
+   height: 560px;
+   margin: 0 auto;
+}
+
+.paper_logo {
+   width: 1260px;
+   height: 50px;
+   background-color: #caddea;
+   position: relative;
+   top: 20px;
+   left: 20px;
+   filter: drop-shadow(2px 3.464px 3.5px rgba(2, 68, 121, 0.75));
+}
+
+.paper_logo h2 {
+   font-size: 28px;
+   text-transform: uppercase;
+   color: #1b7fd0;
+   font-weight: 700;
+   font-family: "Roboto";
+   line-height: 50px;
+   margin-left: 30px;
+   text-align: center;
+}
+
+.paper_logo::before {
+   content: '';
+   width: 0;
+   height: 0;
+   border-top: 20px solid #caddea;
+   border-right: 30px solid transparent;
+   position: absolute;
+   bottom: -20px;
+}
+
+.paper h5 {
+   position: relative;
+   top: 40px;
+   font-size: 24px;
+   color: #e9f7fe;
+   font-family: "Archivo Narrow";
+   text-align: center;
+}
+
+.paper_body {
+   position: relative;
+   top: 100px;
+}
+
+.paper_body .row {
+   position: relative;
+   bottom: 35px;
+   height: 170px;
+}
+
+.paper_body .col {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+
+   transition: all .3s ease;
+}
+
+.paper .col:hover {
+   transform: scale(1.1);
+   box-shadow: 0px 0px 30px -4px rgba(0, 0, 0, 0.57);
+}
+
+.paper .col:hover hr {
+   background-color: #013056;
+   border: 1px solid #013056;
+}
+.paper .col:hover .radio {
+   background-color: #013056;
+   
+}
+
+.paper_body .radio {
+   width: 30px;
+   height: 30px;
+   border-radius: 15px;
+   background-color: #ffffff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 25px;
+   color: #1b7fd0;
+   font-weight: 700;
+   font-family: "Roboto";
+   margin: 10px;
+
+   transition: all .2s ease;
+
+}
+
+
+.paper_body p {
+   width: 254px;
+   /* height: 100%; */
+   text-align: left;
+   line-height: 25px;
+   font-size: 22px;
+   color: #ffffff;
+   font-family: "Archivo Narrow";
+   margin-left: 10px;
+}
+
+.paper_body hr {
+   margin-left: 10px;
+   width: 255px;
+   height: 2px;
+   background-color: #ffffff;
+   border: 1px solid #ffffff;
+   opacity: 1;
+}
+
+/* PAPER */
 /*! MAIN */
