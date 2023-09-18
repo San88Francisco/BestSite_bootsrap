@@ -1,0 +1,94 @@
+/* ?:active  При натискані*/
+/* .btn:active{
+   background-color: aqua;
+} */
+
+/* ?:checked  працює з радіо кнопкой або з чекбоксом*/
+/* .checkbox:checked+.result {
+   color: green;
+} */
+
+/* ?:disabled  працює з неактивними елементами*/
+/* .input:disabled {
+   background-color: blueviolet;
+} */
+
+/* ?:disabled  працює з активними елементами*/
+/* .input:enabled {
+   color: black;
+   background-color: rgb(43, 226, 156);
+} */
+
+/* ?:empty  для пустих елементів*/
+/* select:empty {
+   display: none;
+} */
+
+/* ?:any-link  для всіх тегів а*/
+/* :any-link {
+   text-decoration: none;
+} */
+
+/* ?:focus  коли взаємодіємо з елементом*/
+/* button:focus {
+   background-color: brown;
+   color: black;
+} */
+
+/* ?:lang  в залежності від активної мови*/
+/* h1:lang(uk){
+   color: yellow;
+   background-color: blue;
+}
+h1:lang(en){
+   color: brown;
+   background-color: blue;
+} */
+
+/* ?:link ще не переходили and :visited уже переходили */
+/* a:link{
+   color: black;
+   text-decoration: underline;
+}
+a:visited{
+   color: brown;
+   text-decoration: none;
+} */
+
+
+
+
+/* !ПСЕВДО ЕЛЕМЕНТИ */
+
+/* ? ::first-letter задає стилі до першої буква */
+/* .ph2::first-letter{
+   font-size: 42px;
+   color: blue;
+} */
+
+/* ? ::first-line задає стилі до першого рядка */
+/* .ph2::first-line{
+   color: blue;
+   text-decoration: underline;
+} */
+
+/* ? ::selection при виділені */
+/* .ph2::selection{
+   background-color: brown;
+   color: white;
+} */
+
+/* ? ::marker для списків  */
+/* li::marker{
+   color: blanchedalmond;
+} */
+
+/* ? ::placeholder для placeholder */
+/* input::placeholder{
+   color: blue;
+} */
+
+/* ? ::file-selector-button міняє текст */
+/* input::file-selector-button{
+   color: blue;
+} */

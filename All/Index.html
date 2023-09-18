@@ -2,343 +2,250 @@
 <html lang="en">
 
 <head>
+   
    <meta charset="UTF-8">
    <meta name="viewport" content="width=\, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+   integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
    <title>Document</title>
-
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link
-      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Black+Ops+One&family=Inconsolata:wght@300&family=Kanit:ital@1&family=Kaushan+Script&family=Lora&family=Montserrat+Alternates:wght@600&family=Montserrat:ital,wght@0,600;0,700;1,400&family=Roboto:wght@300;400;500;700&family=Rubik+Moonrocks&family=Zen+Dots&display=swap"
-      rel="stylesheet">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+      rel="stylesheet" />
    <link
-      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Archivo+Narrow:wght@400;500;600;700&family=Black+Ops+One&family=Inconsolata:wght@300&family=Kanit:ital@1&family=Kaushan+Script&family=Lora&family=Montserrat+Alternates:wght@600&family=Montserrat:ital,wght@0,600;0,700;1,400&family=Roboto:wght@300;400;500;700&family=Rubik+Moonrocks&family=Zen+Dots&display=swap"
-      rel="stylesheet">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-   <link rel="stylesheet" href="./Style.css">
+      href="https://fonts.googleapis.com/css?family=Archivo+Narrow:regular,500,600,700,italic,500italic,600italic,700italic"
+      rel="stylesheet" />
+      <link rel="stylesheet" href="./Style.css">
 </head>
 
 <body>
-   <header>
-      <nav class="nav_1">
-         <div class="container text-center header_bg">
-            <div class="row ">
-               <div class="col header_top">
-                  <span>Sales toll free:</span> <a href="#">1 (877) 894-0925</a>
-                  <span>Support toll free:</span> <a href="#">1 (888) 901-8317</a>
-               </div>
-               <div class="col Life_Login">
-                  <a class="log" href="#">Login
-                     <!-- <img src="../image/header/Login icon.png" alt=""> -->
-                  </a>
-                  <a class="chat" href="#">Live Chat
-                     <!-- <img src="../image/header/Chat Icon.png" alt=""> -->
-                  </a>
-               </div>
+   <header class="bg1">
+      <div class="container text-center header ">
+         <div class="row">
+            <div class="tel col-xl-4 col-lg-6">
+               <p>Sales toll free: <a href="#"><span>1 (877) 894-0925</span></a></p>
+            </div>
+            <div class="tel col-xl-4 col-lg-6">
+               <p>Support toll free: <a href="#"><span>1 (888) 901-8317</span></a></p>
+            </div>
+            <div class="log  d-sm-none d-xl-block col-xl-4">
+               <a class="Login" href="#">
+                  login
+               </a>
+               <a class="Login" href="#">
+                  live chat
+               </a>
             </div>
          </div>
-      </nav>
+      </div>
+   </header>
 
-      <nav class="nav_2">
-         <div class="container text-center">
+   <header class="bg2">
+      <div id="open" class="container text-center header opem_terget">
+         <nav id="close" class="menu_body">
             <div class="row">
-               <div class="col"><a class="border_li" href="#">home</a></div>
-               <div class="col"><a class="border_li" href="#">about us</a></div>
-               <div class="col"><a class="border_li" href="#">prices</a></div>
-               <div class="col"><a class="border_li" href="#">discounts</a></div>
-               <div class="col"><a class="border_li" href="#">guarantees</a></div>
-               <div class="col"><a class="border_li" href="#">faq</a></div>
-               <div class="col"><a class="border_li" href="#">beware</a></div>
-               <div class="col"><a class="border_li" href="#">contact us</a></div>
-               <div class="col"><a href="#">blog</a></div>
+               <ul class="meni_list">
+                  <li class="menu_link bord1"><a href="#">Home</a></li>
+                  <li class="menu_link bord"><a href="#">About us</a></li>
+                  <li class="menu_link bord"><a href="#">Prices</a></li>
+                  <li class="menu_link bord"><a href="#">Discounts</a></li>
+                  <li class="menu_link bord"><a href="#">guarantees</a></li>
+                  <li class="menu_link bord"><a href="#">faq</a></li>
+                  <li class="menu_link bord"><a href="#">beware</a></li>
+                  <li class="menu_link bord"><a href="#">Contact us</a></li>
+                  <li class="menu_link bord2"><a href="#">blog</a></li>
+               </ul>
             </div>
+         </nav>
+         <a href="#open" class="icon_menu"><span></span> </a>
+         <a href="#close" class="close_icon_menu"></a>
+         <div class="nav_log d-sm-none d-xl-none d-lg-block log col-xl-4">
+            <a class="Login" href="#">
+               login
+            </a>
+            <a class="Login" href="#">
+               live chat
+            </a>
          </div>
-      </nav>
+      </div>
    </header>
 
    <main>
       <section class="baner">
-         <img class="poster" src="../image/baner/fon (1).png" alt="">
-         <div class="container ">
-            <div class="row row-cols-1">
-               <div class="col ">
-                  <img class="b_img1" src="../image/baner/Logo.svg" alt="">
-               </div>
-               <div class="col baner_logo">
-                  <h1>Things go Better with Us!</h1>
-               </div>
-               <div class="col">
-                  <h2>What we offer you: </h2>
-               </div>
-               <div class="col">
-                  <ul>
-                     <li><span>A dedicated writer who is qualified in your field</span></li>
-                     <li><span>Your subject matter analyzed, researched, referenced and written as you instruct</span>
-                     </li>
-                     <li><span>Papers tested for plagiarism using systems such as Copyscape plus a validation
-                           report</span></li>
-                     <li><span>
-                           A flawless end product in terms of style and grammar
-                        </span></li>
-                  </ul>
+         <img class="woman" src="../image/baner/fon (1).png" alt="">
+         <div class="baner_top">
+            <img src="../image/baner/Logo.svg" alt="">
+            <div class="afisha">
+               <h1>Things go Better with Us!</h1>
+               <span></span>
+            </div>
+            <ul>
+               <h3>What we offer you:</h3>
+               <li>A dedicated writer who is qualified in your field</li>
+               <li>Your subject matter analyzed, researched, referenced and written as you instruct</li>
+               <li>Papers tested for plagiarism using systems such as Copyscape plus a validation report</li>
+               <li>A flawless end product in terms of style and grammar</li>
+            </ul>
+
+            <div class="container text-center">
+               <div class="row row-cols-2">
+                  <div class="col">
+                     <a href="#">Essays & Research Papers</a>
+                  </div>
+                  <div class="col">
+                     <a href="#">Dissertations & Thesess</a>
+                  </div>
+                  <div class="col">
+                     <a href="#">Resumes & CVs</a>
+                  </div>
+                  <div class="col">
+                     <a href="#">Editing & Proofreading</a>
+                  </div>
                </div>
             </div>
          </div>
+      </section>
+
+      <section class="Price">
          <div class="container text-center">
-            <div class="row row-cols-2 baner_botton">
-               <div class="col"><a href="#">Essays & Research Papers</a></div>
-               <div class="col"><a href="#">Dissertations & Thesess</a></div>
-               <div class="col"><a href="#">Resumes & CVs</a></div>
-               <div class="col"><a href="#">Editing & Proofreading</a></div>
-            </div>
-         </div>
-      </section>
-
-      <section class="forma">
-         <div class="forma_top">
-            <div class="forma_logo">
-               <h2>Get a price quote</h2>
-               <div class="forma_flex">
-                  <img src="../image/Svg/Arrow.svg" alt="">
-                  <h1>15</h1>
-                  <h3>%OFF</h3>
-                  <p>YOUR FIRST ORDER</p>
+            <div class="row">
+               <div class="col">
+                  <div class="afisha">
+                     <h1>Get a price quote</h1>
+                     <img src="../image/Svg/Arrow.svg" alt="">
+                     <h4><span>15% </span> <span>Off</span> YOUR FIRST ORDER</h4>
+                     <span class="kut"></span>
+                  </div>
                </div>
             </div>
-
-            <div class="bottom_forma">
-               <div class="form-floating">
-                  <h4>TITLE OF YOUR PAPER</h4>
-                  <select class="box_forma" id="floatingSelect" aria-label="Floating label select example">
-                     <option selected></option>
-                     <option value="1">One</option>
-                     <option value="2">Two</option>
-                     <option value="3">Three</option>
-                  </select>
-                  <!-- <label for="floatingSelect"></label> -->
+            <div class="title row row-cols-3">
+               <div class="long col-xl-4">
+                  <h5>TITLE OF YOUR PAPER</h5>
+                  <div class="form-floating">
+                     <select>
+                        <option selected></option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                     </select>
+                  </div>
                </div>
-               <div class="form-floating">
-                  <h4>ACAVDEMIC LEVEL</h4>
-                  <select class="box_forma" id="floatingSelect" aria-label="Floating label select example">
-                     <option selected></option>
-                     <option value="1">One</option>
-                     <option value="2">Two</option>
-                     <option value="3">Three</option>
-                  </select>
-                  <!-- <label for="floatingSelect"></label> -->
+               <div class="col-xl-4">
+                  <h5>ACADEMIC LEVEL</h5>
+                  <div class="form-floating">
+                     <select>
+                        <option selected></option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                     </select>
+                  </div>
                </div>
-               <div class="form-floating">
-                  <h4>SPACING</h4>
-                  <select class="box_forma" id="floatingSelect" aria-label="Floating label select example">
-                     <option selected></option>
-                     <option value="1">One</option>
-                     <option value="2">Two</option>
-                     <option value="3">Three</option>
-                  </select>
-                  <!-- <label for="floatingSelect"></label> -->
+               <div class="col-xl-4">
+                  <h5>SPACING</h5>
+                  <div class="form-floating">
+                     <select>
+                        <option selected></option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                     </select>
+                  </div>
                </div>
-               <div class="form-floating">
-                  <h4>URGENCY</h4>
-                  <select class="box_forma" id="floatingSelect" aria-label="Floating label select example">
-                     <option selected></option>
-                     <option value="1">One</option>
-                     <option value="2">Two</option>
-                     <option value="3">Three</option>
-                  </select>
-                  <!-- <label for="floatingSelect"></label> -->
+               <div class="col-xl-4">
+                  <h5>URGENCY</h5>
+                  <div class="form-floating">
+                     <select>
+                        <option selected></option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                     </select>
+                  </div>
                </div>
-               <div class="forma_cena">
-                  <h4>Total price</h4>
-                  <h2>16.99</h2>
-                  <h3>USD</h3>
+               <div class="col-xl-4 block">
+                  <h5>Total price</h5>
+                  <h2>16.99 <span>USD</span></h2>
                </div>
-               <div class="order_forma">
-                  <a href="#">
-                     <h5>order now</h5>
-                     <!-- <div class="order_figyra"></div> -->
-                  </a>
-               </div>
-            </div>
-         </div>
-      </section>
-
-      <section class="essay">
-         <div class="essay_all">
-            <div class="essay_top">
-               <div class="essay_logo">
-                  <h2>Essay writing is challenging, difficult and time-consuming</h2>
-               </div>
-               <h4>Are students overseas concerned about different research papers writing? Certainly yes! It is often
-                  much
-                  harder for them to keep up with written essay assignments, especially at higher level education.
-                  Though
-                  they may study hard, but they may still be disappointed with the grades they get for their coursework.
-                  The recipe for success is to create a genuinely good research paper with a unique angle. When this is
-                  strengthened with good editing and a plagiarism test, you have an opportunity to get a grade winning
-                  essay.
-                  If you are thinking you can't write your essay well enough and you need professional assistance, then
-                  you
-                  are thinking along the right lines. When your tutors read the essay we provide, they will love it.
-                  They
-                  will think you wrote it and they will admire the way it is written, so you are likely to get an A
-                  grade.
-               </h4>
-
-               <div class="container text-center">
-                  <div class="row">
-                     <div class="col ">
-                        <div class="img_befor">
-                           <div class="card ." style="width: 18rem;">
-                              <h5 class="card-title">All your standards
-                                 will be meet</h5>
-                              <p class="card-text">These days, on a monthly basis, countless students buy essays from
-                                 professional writing service providers. And, guess what? This is no big surprise. There
-                                 are many students who aren't very skilled at writing and cannot produce good-quality,
-                                 accurately referenced and perfectly edited custom papers on their own.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                           </div>
-                        </div>
-                     </div>
-
-                     <div class="col ">
-                        <div class="img_befor">
-                           <div class="card" style="width: 18rem;">
-                              <h5 class="card-title">Our professional writer can make all the difference for students
-                              </h5>
-                              <p class="card-text">As a market-leading provider of essay help, we have unquestionable
-                                 experience and a well-established reputation in our field. Our main objective is to
-                                 lend
-                                 our assistance to students all around the globe so that they may succeed in their
-                                 academic
-                                 endeavors and in every aspect of their lives. If you buy your papers from us online,
-                                 you
-                                 will be able to manage your busy schedule better and devote more time to friends and
-                                 family or use it for other more pressing matters, whether they are personal or
-                                 business-related.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col ">
-                        <div class="img_befor">
-                           <div class="card" style="width: 18rem;">
-                              <h5 class="card-title">Five good reasons to
-                                 partner
-                                 BestWritingHelp.org</h5>
-                              <p class="card-text">All said, there are five good reasons that make us the best and most
-                                 professional service provider with over 90% of our customers placing repeat orders.</p>
-                              <ul class="ul1">
-                                 <li>Original content: All papers are fully free of plagiarism</li>
-                                 <li>Punctuality: With over 2000 writers, all papers are delivered on time</li>
-                                 <li>
-                                    Legitimate ordering process: We use trustworthy billing methods e.g. Payoneer,
-                                    PayPal
-                                    and similar
-                                 </li>
-                                 <li>Privacy: No one will know you got help</li>
-                                 <li>Papers at an affordable price: We offer the best value with prices that are quite
-                                    cheap</li>
-                              </ul>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col ">
-                        <div class="img_befor">
-                           <div class="card" style="width: 18rem;">
-                              <h5 class="card-title">There is a solution if you
-                                 buy essays from us </h5>
-                              <p class="card-text">It may surprise you to learn that one in four students use the
-                                 services
-                                 of custom writing companies. It is entirely reasonable to look for essay help from
-                                 experts
-                                 when you have an overly complex assignment. If you do, you will:</p>
-                              <ul class="ul2">
-                                 <li>Gain some free time for yourself</li>
-                                 <li>Get improved grades</li>
-                                 <li>Be equal to the best students</li>
-                              </ul>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                           </div>
-                        </div>
-                     </div>
+               <div class="col-xl-4">
+                  <div class="order">
+                     <a href="#">
+                        <h3>order now</h3>
+                        <span></span>
+                     </a>
                   </div>
                </div>
             </div>
          </div>
       </section>
 
-      <section class="paper">
-         <div class="paper_top">
-            <div class="paper_logo">
-               <h2>Why order paper assignments from BestWritingHelp.org?</h2>
-            </div>
-            <h5>The features that define our uniqueness when you order paper assignments:</h5>
-            <div class="paper_body">
-               <div class="container text-center">
-                  <div class="row">
-                     <div class="col">
-                        <div class="radio">1</div>
-                        <p>A team of writing experts that is larger than you will find elsewhere.
-                        </p>
-                        <hr>
-                     </div>
-                     <div class="col">
-                        <div class="radio">2</div>
-                        <p>Flexible pricing structure based on your academic level, the length of your assignment and the time frame you need it
-                        </p>
-                        <hr>
-                     </div>
-                     <div class="col">
-                        <div class="radio">3</div>
-                        <p>The highest number of clients.</p>
-                        <hr>
-                     </div>
-                     <div class="col">
-                        <div class="radio">4</div>
-                        <p>Attractive discounts for repeat customers.
-                        </p>
-                        <hr>
-
-                     </div>
-                     <div class="col">
-                        <div class="radio">5</div>
-                        <p>Close collaboration 
-                        </p>
-                        <hr>
-
-                     </div>
-                     <div class="col">
-                        <div class="radio">6</div>
-                        <p>Revisions accommodated where customer is not satisfied with our first effort.
-                        </p>
-                        <hr>
-
-                     </div>
-                     <div class="col">
-                        <div class="radio">7</div>
-                        <p>High levels of security for all customers.
-                        </p>
-                        <hr>
-
-                     </div>
-                     <div class="col">
-                        <div class="radio">8</div>
-                        <p>Convenient contact methods with our headquarters if you have any queries on your order.
-                        </p>
-                        <hr>
-                     </div>
-
+      <section class="Essay">
+         <div class="container text-center">
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="afisha">
+                     <h1>Essay writing is challenging, difficult and time-consuming</h1>
+                     <span></span>
                   </div>
                </div>
+               <div class="text col-lg-12">
+                  <p>Are students overseas concerned about different research papers writing? Certainly yes! It is often
+                     much harder for them to keep up with written essay assignments, especially at higher level
+                     education. Though they may study hard, but they may still be disappointed with the grades they get
+                     for their coursework. The recipe for success is to create a genuinely good research paper with a
+                     unique angle. When this is strengthened with good editing and a plagiarism test, you have an
+                     opportunity to get a grade winning essay.
+                     <br>
+                     If you are thinking you can't write your essay well enough and you need professional assistance,
+                     then you are thinking along the right lines. When your tutors read the essay we provide, they will
+                     love it. They will think you wrote it and they will admire the way it is written, so you are likely
+                     to get an A grade.
+                  </p>
+               </div>
             </div>
-         </div>
-
+            <div class="container text-center">
+               <div class="row">
+                  <div class="colonka col">
+                     <div class="image"></div>
+                     <h4>All your standards
+                        will be meet </h4>
+                     <p>These days, on a monthly basis, countless students buy essays from professional writing service providers. And, guess what? This is no big surprise. There are many students who aren't very skilled at writing and cannot produce good-quality, accurately referenced and perfectly edited custom papers on their own.</p>
+                    
+                     <button class="btn btn-primary" type="submit">read more </button>
+                     <span></span>
+                  </div>
+                  <div class="colonka col">
+                     <div class="image"></div>
+                     <h4>All your standards
+                        will be meet </h4>
+                     <p>These days, on a monthly basis, countless students buy essays from professional writing service providers. And, guess what? This is no big surprise. There are many students who aren't very skilled at writing and cannot produce good-quality, accurately referenced and perfectly edited custom papers on their own.</p>
+                    
+                     <button class="btn btn-primary" type="submit">read more </button>
+                     <span></span>
+                  </div>
+                  <div class="colonka col">
+                     <div class="image"></div>
+                     <h4>All your standards
+                        will be meet </h4>
+                     <p>These days, on a monthly basis, countless students buy essays from professional writing service providers. And, guess what? This is no big surprise. There are many students who aren't very skilled at writing and cannot produce good-quality, accurately referenced and perfectly edited custom papers on their own.</p>
+                    
+                     <button class="btn btn-primary" type="submit">read more </button>
+                     <span></span>
+                  </div>
+                  <div class="colonka col">
+                     <div class="image"></div>
+                     <h4>All your standards
+                        will be meet </h4>
+                     <p>These days, on a monthly basis, countless students buy essays from professional writing service providers. And, guess what? This is no big surprise. There are many students who aren't very skilled at writing and cannot produce good-quality, accurately referenced and perfectly edited custom papers on their own.</p>
+                    
+                     <button class="btn btn-primary" type="submit">read more </button>
+                  </div>
+                  <span></span>
+                  
+               </div>
+            </div>
       </section>
    </main>
+
 
 
 
