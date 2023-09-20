@@ -62,6 +62,35 @@ a {
 }
 
 
+.afisha {
+   width: 100%;
+   height: 60px;
+   margin-top: 20px;
+   background-color: #caddea;
+   filter: drop-shadow(2px 3.464px 3.5px rgba(155, 182, 190, 0.75));
+}
+
+.afisha .fg {
+   width: 0;
+   height: 0;
+   border-top: 30px solid #caddea;
+   border-right: 40px solid transparent;
+   position: relative;
+   bottom: 10px;
+}
+
+.afisha h1 {
+   text-align: center;
+   font-size: 32px;
+   text-transform: uppercase;
+   color: #1b7fd0;
+   font-weight: 700;
+   font-family: "Roboto";
+   line-height: 60px;
+}
+
+
+
 
 /* ========================HEADER========================== */
 
@@ -167,11 +196,15 @@ nav .bord2 {
    border-left: 1px solid #ffffff;
 }
 
+nav .bord:hover {
+   border-right: 0px solid #caddea;
+   border-left: 0px solid #caddea;
+}
+
 nav li a:hover {
    color: #1b7fd0;
    background-color: #caddea;
-   border-right: 0px solid #caddea;
-   border-left: 0px solid #caddea;
+
 }
 
 @media (max-width:1390px) {
@@ -332,14 +365,14 @@ nav li a:hover {
    background-size: 100% 600px;
    width: 100%;
    height: 600px;
+   margin: 0 auto;
 }
 
 .woman {
-   max-width: 100%;
+   width: 100%;
    height: 600px;
    object-fit: cover;
    position: absolute;
-
 }
 
 .baner_top {
@@ -402,6 +435,20 @@ nav li a:hover {
    font-size: 18px;
    color: #1b7fd0;
    background-color: #caddea;
+}
+
+@media (min-width:1400px) {
+   .baner_top {
+      position: relative;
+      left: 0px;
+      width: 1330px;
+      margin: 0 auto;
+   }
+
+   .baner_top .container {
+      width: 630px;
+      float: left;
+   }
 }
 
 /*? ========================AFISHA========================== */
@@ -593,8 +640,8 @@ nav li a:hover {
 .order span {
    width: 0;
    height: 0;
-   border-top: 25px solid #dd0000;
-   border-right: 30px solid transparent;
+   border-top: 30px solid #dd0000;
+   border-right: 40px solid transparent;
    position: absolute;
    left: 0;
    top: 38px;
@@ -637,44 +684,20 @@ nav li a:hover {
 
       transition: all .3s linear;
    }
+
+   .order h3 {
+      line-height: 35px;
+   }
 }
 
 
 /* ========================ESSAY========================== */
 .Essay {
    background-image: url(../image/Svg/Bg3-1.svg);
-   block-size: 200%;
+   background-repeat: repeat-x;
+   background-size: 80%;
    width: 100%;
-   height: 280px;
-}
-
-.Essay .afisha {
-   width: 100%;
-   height: 60px;
-   margin-top: 20px;
-   background-color: #caddea;
-   filter: drop-shadow(2px 3.464px 3.5px rgba(155, 182, 190, 0.75));
-}
-
-.Essay .afisha span {
-   width: 0;
-   height: 0;
-   border-top: 30px solid #caddea;
-   border-right: 40px solid transparent;
-   position: absolute;
-   left: 0;
-   top: 60px;
-}
-
-.Essay .afisha h1 {
-   text-align: center;
-   font-size: 32px;
-   line-height: 36px;
-   text-transform: uppercase;
-   color: #1b7fd0;
-   font-weight: 700;
-   font-family: "Roboto";
-   line-height: 60px;
+   height: 1900px;
 }
 
 .Essay .text {
@@ -685,14 +708,15 @@ nav li a:hover {
 }
 
 .Essay .colonka {
-   display: flex;
-   /* border: 1px solid black; */
-   flex-direction: column;
-   align-items: center;
-   padding: 15px;
+   padding-top: 15px;
+   margin-bottom: 35px;
 
    transition: all .3s ease;
 
+}
+
+.Essay .colonka p {
+   font-size: 16px;
 }
 
 .Essay .image::after {
@@ -706,7 +730,7 @@ nav li a:hover {
    transition: all .3s ease;
 }
 
-.colonka:hover>.image::after {
+.Essay .colonka:hover>.image::after {
    content: "";
    background-image: url(../image/Svg/Element1_dark.svg);
 
@@ -714,15 +738,33 @@ nav li a:hover {
 }
 
 .colonka h4 {
+   /* width: 260px; */
+   height: 80px;
    line-height: 22px;
    text-transform: uppercase;
-   padding: 25px;
+   margin: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
-.colonka p {
+
+
+.colonka .boxing {
+   width: 100%;
+   height: 420px;
    padding: 10px;
    text-align: justify;
    font-size: 18px;
+}
+
+.colonka ul {
+   font-size: 16px;
+   color: #000000;
+   font-family: "Roboto";
+   text-align: left;
+   flex: 1 1 auto;
+
 }
 
 .colonka .btn {
@@ -743,21 +785,255 @@ nav li a:hover {
 
 .colonka:hover {
    background-color: #ffffff;
+   filter: drop-shadow(2px 3.464px 3.5px rgba(167, 192, 200, 0.75));
+   z-index: 2;
 }
 
-.colonka span {
+.colonka .figyra {
    width: 0;
    height: 0;
-   border-top: 40px solid #0b0c0e;
+   border-top: 40px solid #f4f6fa;
    border-right: 50px solid transparent;
-   position: absolute;
-   top: 50px;
-   right: 139px;
+   position: relative;
+   left: 0;
+   bottom: -27px;
+   margin: -12px;
+   /* left: 2px; */
+   padding: 0;
 
    transition: all .3s ease;
-
 }
 
-.colonka:hover span{
+.colonka:hover .figyra {
    border-top: 40px solid #ffffff;
+}
+
+@media (min-width:1200px) {
+   .Essay {
+      height: 1100px;
+   }
+}
+
+@media (min-width:1400px) {
+   .Essay {
+
+      height: 1000px;
+   }
+
+   .colonka .boxing {
+      width: 100%;
+      height: 350px;
+   }
+}
+
+@media (max-width:1200px) {
+   .Essay {
+      height: 1550px;
+   }
+
+   .colonka .boxing {
+      height: 250px;
+   }
+
+   .afisha h1 {
+      font-size: 28px;
+   }
+}
+
+
+/* ========================PAPER========================== */
+.Paper {
+   background-image: url(../image/Svg/Bg2.svg);
+   background-repeat: repeat-x;
+   background-size: 190%;
+   background-color: #1b7fd0;
+   width: 100%;
+   height: 100%;
+}
+
+.Paper .text p {
+   margin-top: 35px;
+   font-size: 25px;
+   text-align: center;
+   font-weight: 400;
+   color: #ffffff;
+}
+
+.Paper .afisha {
+   width: 100%;
+   height: 60px;
+   margin-top: 20px;
+   background-color: #caddea;
+   filter: drop-shadow(2px 3.464px 3.5px rgba(2, 68, 121, 0.75));
+}
+
+.paper_table .nomber {
+   width: 30px;
+   height: 30px;
+   border-radius: 15px;
+   background-color: #ffffff;
+   font-size: 25px;
+   color: #1b7fd0;
+   font-weight: 700;
+   font-family: "Roboto";
+   line-height: 30px;
+   margin: 10px 0;
+}
+
+.paper_table h5 {
+   font-size: 22px;
+   color: #ffffff;
+   text-align: left;
+   padding-bottom: 15px;
+   margin-bottom: 20px;
+   border-bottom: 2px solid #ffffff;
+}
+
+
+/* ========================WORKS========================== */
+.Works {
+   width: 100%;
+   height: 750px;
+}
+
+.works_main {
+   width: 1200px;
+   height: 430px;
+   margin-top: 80px;
+   /* border: 1px solid black; */
+}
+
+.works_main .row>div {
+   height: 430px;
+}
+
+.works_main ul {
+   height: 430px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: flex-start;
+   list-style-type: none;
+}
+
+.works_main li {
+   display: flex;
+   align-items: center;
+   text-align: left;
+   width: 600px;
+   height: 100%;
+   border-bottom: 2px solid #caddea;
+   font-size: 16px;
+   text-transform: uppercase;
+   color: #1b7fd0;
+   font-weight: 500;
+}
+
+.works_main li h4 {
+   padding-top: 10px;
+   flex: 1 1 auto;
+}
+
+.works_main li h1 {
+   font-size: 59px;
+   text-transform: uppercase;
+   color: #caddea;
+   font-weight: 700;
+   font-family: "Rajdhani";
+   text-align: center;
+   margin: 0 15px;
+}
+
+.works_main ul span {
+   width: 0;
+   height: 0;
+   border-top: 37px solid transparent;
+   border-left: 25px solid #075da1;
+   border-bottom: 37px solid transparent;
+   position: relative;
+   left: 24px;
+   display: none;
+}
+
+.works_main li .right {
+   width: 450px;
+   height: 440px;
+   position: absolute;
+   top: 2750px;
+   margin-left: 610px;
+   background-color: #ffffff;
+   display: none;
+}
+
+.works_main .right p {
+   padding: 0 25px;
+   font-size: 14px;
+   text-align: justify;
+   text-transform: capitalize;
+}
+
+.works_main .right img {
+   width: 100px;
+   margin: 20px 0;
+}
+
+.works_main li:hover h4 {
+   font-size: 17px;
+   color: #ffffff;
+}
+
+.works_main li:hover {
+   width: 610px;
+   background-color: #075da1;
+   border-radius: 2px;
+}
+
+.works_main li:hover .right {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+}
+
+.works_main li:hover span {
+   display: inline;
+   z-index: 2;
+}
+
+@media (max-width:1200px) {
+   .works_main li {
+      display: flex;
+      align-items: center;
+      text-align: left;
+      width: 500px;
+      height: 100%;
+      border-bottom: 2px solid #caddea;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: #1b7fd0;
+      font-weight: 500;
+   }
+
+   .works_main li:hover {
+      width: 510px;
+      background-color: #075da1;
+      border-radius: 2px;
+   }
+
+   .works_main li .right {
+      width: 400px;
+      height: 440px;
+      position: absolute;
+      background-color: #ffffff;
+      margin-top: 590px;
+      margin-left: 510px;
+      text-align: center;
+   }
+}
+
+@media (max-width:1400px) {
+   .works_main li .right {
+      position: absolute;
+      top: 2878px;
+   }
 }
