@@ -640,8 +640,8 @@ nav li a:hover {
 .order span {
    width: 0;
    height: 0;
-   border-top: 30px solid #dd0000;
-   border-right: 40px solid transparent;
+   border-top: 25px solid #dd0000;
+   border-right: 30px solid transparent;
    position: absolute;
    left: 0;
    top: 38px;
@@ -893,22 +893,20 @@ nav li a:hover {
 /* ========================WORKS========================== */
 .Works {
    width: 100%;
-   height: 750px;
+   height: 850px;
+   background-image: url(../image/Svg/Bg3-1.svg);
+   background-repeat: no-repeat;
+   background-size: 100% 170%;
 }
 
 .works_main {
    width: 1200px;
-   height: 430px;
+   height: 100%;
    margin-top: 80px;
-   /* border: 1px solid black; */
-}
-
-.works_main .row>div {
-   height: 430px;
 }
 
 .works_main ul {
-   height: 430px;
+   height: 440px;
    display: flex;
    flex-direction: column;
    justify-content: space-around;
@@ -921,7 +919,7 @@ nav li a:hover {
    align-items: center;
    text-align: left;
    width: 600px;
-   height: 100%;
+   height: 85px;
    border-bottom: 2px solid #caddea;
    font-size: 16px;
    text-transform: uppercase;
@@ -939,7 +937,7 @@ nav li a:hover {
    text-transform: uppercase;
    color: #caddea;
    font-weight: 700;
-   font-family: "Rajdhani";
+   font-family: Arial, Helvetica, sans-serif;
    text-align: center;
    margin: 0 15px;
 }
@@ -959,7 +957,7 @@ nav li a:hover {
    width: 450px;
    height: 440px;
    position: absolute;
-   top: 2750px;
+   top: 2755px;
    margin-left: 610px;
    background-color: #ffffff;
    display: none;
@@ -980,6 +978,7 @@ nav li a:hover {
 .works_main li:hover h4 {
    font-size: 17px;
    color: #ffffff;
+   letter-spacing: 2px;
 }
 
 .works_main li:hover {
@@ -1036,4 +1035,93 @@ nav li a:hover {
       position: absolute;
       top: 2878px;
    }
+}
+
+.works_main .order {
+   position: relative;
+   top: 100px;
+   margin: 0 auto;
+}
+
+
+/* ========================CARD========================== */
+.card {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   height: 80px;
+   border: 0px;
+   background-color: #caddea;
+}
+
+.card .box {
+   width: 1300px;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.card a {
+   margin: 0 10px;
+   transition: all .2s linear;
+}
+
+.card img {
+   width: 80px;
+}
+
+.card .right {
+   display: flex;
+   justify-content: space-between;
+   width: 150px;
+   height: 30px;
+}
+
+.card .right .cl11:hover:after {
+   filter: drop-shadow(16px 16px 26px blue) invert(45%);
+}
+
+.card .right .cl11::after {
+   content: '';
+   display: inline-block;
+   background-image: url(../image/Svg/Facebook.svg);
+   background-repeat: no-repeat;
+   width: 20px;
+   height: 30px;
+
+   transition: all .2s linear;
+}
+
+.card .right .cl12:hover:after {
+   filter: drop-shadow(16px 16px 26px blue) invert(45%);
+}
+
+.card .right .cl12::after {
+   content: '';
+   display: inline-block;
+   background-image: url(../image/Svg/Twiter.svg);
+   background-repeat: no-repeat;
+   background-size: 100% 30px;
+   width: 30px;
+   height: 40px;
+
+   transition: all .2s linear;
+
+}
+
+.card .right .cl13:hover::after {
+   filter: drop-shadow(16px 16px 26px blue) invert(45%);
+}
+
+.card .right .cl13::after {
+   content: '';
+   display: inline-block;
+   background-image: url(../image/Svg/Pinterest.svg);
+   background-repeat: no-repeat;
+   width: 30px;
+   height: 30px;
+
+   transition: all .2s linear;
 }
